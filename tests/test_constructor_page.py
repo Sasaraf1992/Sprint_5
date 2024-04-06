@@ -30,6 +30,8 @@ class TestStellarBurgerConstructorPage:
 
         assert bulki_list.is_displayed() and bulki_title.is_displayed()
 
+        driver.quite()
+
     def test_change_section_on_filler(self,driver):
         driver.get(settings.URL)
 
@@ -41,5 +43,7 @@ class TestStellarBurgerConstructorPage:
         filler_title = driver.find_element(*StellarBurgerLocators.CONSTRUCTOR_PAGE_FILLER_TITLE)
 
         assert filler_list.is_displayed() and filler_title.is_displayed()
+
+        driver.quite()
 
 

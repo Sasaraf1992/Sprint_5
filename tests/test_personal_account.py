@@ -25,3 +25,5 @@ class TestStellarBurgerPersonalAccountButton:
         WebDriverWait(driver, settings.MAX_WAIT_TIME).until(EC.visibility_of_element_located(StellarBurgerLocators.PERSONAL_ACCOUNT_PAGE_PROFILE_BUTTON))
 
         assert driver.current_url == "https://stellarburgers.nomoreparties.site/account/profile"
+
+        driver.quite()
