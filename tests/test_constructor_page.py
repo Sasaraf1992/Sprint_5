@@ -2,7 +2,6 @@ import settings
 from locators import StellarBurgerLocators
 
 
-
 class TestStellarBurgerConstructorPage:
 
     def test_change_section_on_sauce(self, driver):
@@ -16,7 +15,7 @@ class TestStellarBurgerConstructorPage:
 
         assert sauce_list.is_displayed() and sauce_title.is_displayed()
 
-    def test_change_section_on_bulki(self,driver):
+    def test_change_section_on_bulki(self, driver):
         driver.get(settings.URL)
 
         sauce_button = driver.find_element(*StellarBurgerLocators.CONSTRUCTOR_PAGE_SAUCE_BUTTON)
@@ -32,12 +31,11 @@ class TestStellarBurgerConstructorPage:
 
         driver.quite()
 
-    def test_change_section_on_filler(self,driver):
+    def test_change_section_on_filler(self, driver):
         driver.get(settings.URL)
 
         filler_button = driver.find_element(*StellarBurgerLocators.CONSTRUCTOR_PAGE_FILLER_BUTTON)
         filler_button.click()
-
 
         filler_list = driver.find_element(*StellarBurgerLocators.CONSTRUCTOR_PAGE_FILLER_INGRIDIENTS)
         filler_title = driver.find_element(*StellarBurgerLocators.CONSTRUCTOR_PAGE_FILLER_TITLE)
@@ -45,5 +43,3 @@ class TestStellarBurgerConstructorPage:
         assert filler_list.is_displayed() and filler_title.is_displayed()
 
         driver.quite()
-
-
