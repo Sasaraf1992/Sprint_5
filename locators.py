@@ -27,12 +27,3 @@ class StellarBurgerLocators:
     CONSTRUCTOR_PAGE_SAUCE_BUTTON_ACTIVE = (By.XPATH, "//div[contains(@class, 'tab_tab_type_current__2BEPc')]/span[text() = 'Соусы']")#Активная кнопка "Соусы" на главной странице
     CONSTRUCTOR_PAGE_BULKA_BUTTON_ACTIVE = (By.XPATH, "//div[contains(@class, 'tab_tab_type_current__2BEPc')]/span[text() = 'Булки']")#Активная кнопка "Булки" на главной странице
     CONSTRUCTOR_PAGE_FILLER_BUTTON_ACTIVE = (By.XPATH, "//div[contains(@class, 'tab_tab_type_current__2BEPc')]/span[text() = 'Начинки']")#Активная кнопка "Начинки" на главной странице
-
-
-
-
-
-
-
-
-
