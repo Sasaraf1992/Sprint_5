@@ -26,4 +26,3 @@ class TestStellarBurgerPersonalAccountButton:
 
         assert driver.current_url == "https://stellarburgers.nomoreparties.site/account/profile"
 
-        driver.quite()

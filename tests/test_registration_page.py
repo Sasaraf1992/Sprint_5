@@ -33,8 +33,6 @@ class TestStellarBurgerRegistration:
 
         assert login_title.is_displayed()
 
-        driver.quite()
-
     def test_incorrect_password(self, driver):
         driver.get(settings.URL + "/register")
 
@@ -53,7 +51,5 @@ class TestStellarBurgerRegistration:
         incorrect_password = driver.find_element(*StellarBurgerLocators.INCORRECT_PASSWORD_ERROR)
 
         assert incorrect_password.is_displayed()
-
-        driver.quite()
 
 

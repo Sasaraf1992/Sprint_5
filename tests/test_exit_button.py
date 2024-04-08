@@ -32,5 +32,3 @@ class TestStellarBurgerExitButton:
 
         assert driver.current_url == "https://stellarburgers.nomoreparties.site/login" and driver.find_element(
             *StellarBurgerLocators.LOGIN_TITLE).is_displayed()
-
-        driver.quite()

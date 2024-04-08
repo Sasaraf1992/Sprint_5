@@ -47,7 +47,6 @@ class TestStellarBurgerLogin:
 
         assert driver.find_element(*StellarBurgerLocators.MAIN_PAGE_CHECKOUT_BUTTON).is_displayed()
 
-        driver.quite()
 
     def test_login_by_registration_page_login_button(self, driver):
         driver.get(settings.URL + "/register")
@@ -69,7 +68,6 @@ class TestStellarBurgerLogin:
 
         assert driver.find_element(*StellarBurgerLocators.MAIN_PAGE_CHECKOUT_BUTTON).is_displayed()
 
-        driver.quite()
 
     def test_login_by_login_button_in_restore_password_page(self, driver):
         driver.get(settings.URL + "/forgot-password")
@@ -90,5 +88,3 @@ class TestStellarBurgerLogin:
             EC.visibility_of_element_located(StellarBurgerLocators.MAIN_PAGE_CHECKOUT_BUTTON))
 
         assert driver.find_element(*StellarBurgerLocators.MAIN_PAGE_CHECKOUT_BUTTON).is_displayed()
-
-        driver.quite()

@@ -26,8 +26,6 @@ class TestStellarBurgerPersonalAccount:
         assert driver.current_url == "https://stellarburgers.nomoreparties.site/" and driver.find_element(
             *StellarBurgerLocators.MAIN_PAGE_CHECKOUT_BUTTON).is_displayed()
 
-        driver.quite()
-
     def test_transition_in_constructor_by_logo_button(self, driver):
         driver.get(settings.URL + '/login')
 
@@ -50,5 +48,3 @@ class TestStellarBurgerPersonalAccount:
 
         assert driver.current_url == "https://stellarburgers.nomoreparties.site/" and driver.find_element(
             *StellarBurgerLocators.MAIN_PAGE_CHECKOUT_BUTTON).is_displayed()
-
-        driver.quite()
