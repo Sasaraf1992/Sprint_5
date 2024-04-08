@@ -1,8 +1,8 @@
 from selenium.webdriver.common.by import By
 
 class StellarBurgerLocators:
-    REGISTRATION_NAME_INPUT = (By.XPATH, "//div/input[@name = 'name']") #Поле имя на странице регистрации
-    REGISTRATION_EMAIL_INPUT = [By.XPATH, "//fieldset[2]/div/div/input"] #Поле email на странице регистрации
+    REGISTRATION_NAME_INPUT = (By.XPATH, "//label[text() = 'Имя']/following-sibling::input") #Поле имя на странице регистрации
+    REGISTRATION_EMAIL_INPUT = (By.XPATH, "//label[text() = 'Email']/following-sibling::input") #Поле email на странице регистрации
     REGISTRATION_PASSWORD_INPUT = (By.NAME, "Пароль") #Поле пароль на странице регистрации
     REGISTRATION_BUTTON = (By.XPATH, "//button[text() = 'Зарегистрироваться']") #Кнопка "Зарегистрироваться"
     REGISTRATION_TITLE = (By.XPATH, "//h2[text() = 'Регистрация']") #Заголовок "Регистрация"
